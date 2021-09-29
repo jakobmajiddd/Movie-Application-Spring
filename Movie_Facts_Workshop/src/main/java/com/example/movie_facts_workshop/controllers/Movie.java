@@ -1,0 +1,86 @@
+package com.example.movie_facts_workshop.controllers;
+
+public class Movie implements Comparable<Movie> {
+
+    private int id;
+    private String title;
+    private int year;
+    private int length;
+    private String subject;
+    private int popularity;
+    private String awards;
+
+    //Constructor
+    public Movie(int id, String title, int year, int length, String subject, int popularity, String awards) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.length = length;
+        this.subject = subject;
+        this.popularity = popularity;
+        this.awards = awards;
+    }
+
+    //Getter
+    public int getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public String getAwards() {
+        return awards;
+    }
+
+    //Setter
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setPopularity(int popularity) {
+        this.popularity = popularity;
+    }
+
+    public void setAwards(String awards) {
+        this.awards = awards;
+    }
+
+    @Override
+    public int compareTo(Movie o) {
+        return o.getPopularity() - this.popularity;
+    }
+}
