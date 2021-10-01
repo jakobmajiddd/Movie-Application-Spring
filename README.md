@@ -1,6 +1,9 @@
 # Movie-Application-Spring
 
 Afleverings Dato 3/10/2021
+Gruppemedlemmer:
+Alexander Kaare
+Jakob Majid
 
 **Movie Facts workshop**
 IntroductionToday we are going to create an application that provides information aboutmovies to the user.
